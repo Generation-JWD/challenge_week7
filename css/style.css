@@ -1,0 +1,119 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+body {
+    l-ine-height: 1.7em;
+    /* font-family: Verdana, Arial, Helvetica, sans-serif; */
+    font-size: 12px;
+    background: #F2F2F2;
+}
+
+/* Navbar */
+
+/* .container-fluid {
+    max-width: 1770px;
+} */
+
+.navbar {
+    background-color: white;
+}
+
+.navbar-brand {
+    color: #3399CC;
+    font-size: 1.6rem;
+}
+
+.navbar-brand i {
+    font-size: 2rem;
+}
+
+.mr-2 {
+    margin-right: .5rem!important;
+}
+
+.nav-item {
+    margin-right: 30px;
+}
+
+.nav-item:last-child { 
+    margin-right: 0; 
+}
+
+.nav-link {
+    color: #666666;
+    border-bottom: 4px solid transparent;
+    font-size: 1.2rem;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+    color: #009999;
+}
+
+.nav-link-1.active,
+.nav-link-1:hover {
+    border-color: #33CCFF;
+}
+
+.nav-link-2.active,
+.nav-link-2:hover {
+    border-color: #FF6666;
+}
+
+.nav-link-3.active,
+.nav-link-3:hover {
+    border-color: #33CC66;
+}
+
+.nav-link-4.active,
+.nav-link-4:hover {
+    border-color: #CC66CC;
+}
+
+/* Banner */
+
+.banner {
+    min-height: 200px;
+    /* background: transparent; */
+    background-image: url("../img/hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Form */
+
+.src_form {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 500px;
+    height: 50px;
+    justify-content: center;
+}
+
+.form-control {
+	padding: 10px 20px;
+	width: 100%;
+	height: auto;
+    border-radius: 0;
+    color: #009999;
+    border: none;
+}
+
+.form-control, 
+input:-internal-autofill-selected, 
+input::placeholder
+{
+    color: #009999 !important;
+}
+
+.src_btn {
+    color: white;
+    background-color: #009999;
+    border: none;
+    width: 120px;
+    height: 50px;
+    border-radius: 0;
+}
