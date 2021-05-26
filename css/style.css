@@ -1,19 +1,25 @@
-/* * {
-    margin: 0;
-    padding: 0;
-} */
 
-body {
-    line-height: 1.7em;
-    /* font-family: Verdana, Arial, Helvetica, sans-serif; */
-    font-size: 12px;
+
+.mb_90{
+    margin-bottom: 90px;
 }
 
+.mt_90{
+    margin-top: 90px;
+}
+
+.mt_60 {
+    margin-top: 60px;
+}
+
+.pr_0{
+    padding-right: 0;
+}
+.mr-2 {
+    margin-right: .5rem!important;
+}
 /* Navbar */
 
-/* .container-fluid {
-    max-width: 1770px;
-} */
 
 .navbar {
     background-color: white;
@@ -28,17 +34,16 @@ body {
     font-size: 2rem;
 }
 
-.mr-2 {
-    margin-right: .5rem!important;
-}
-
 .nav-item {
     margin-right: 30px;
 }
 
-.nav-item:last-child { 
-    margin-right: 0; 
+@media (min-width: 992px) {
+    .nav-item:last-child { 
+        margin-right: 0; 
+    }
 }
+
 
 .nav-link {
     color: #666666;
@@ -75,7 +80,6 @@ body {
 
 .banner {
     min-height: 200px;
-    /* background: transparent; */
     background-image: url("../img/hero.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -108,9 +112,16 @@ input::placeholder
     color: #009999 !important;
 }
 
+.btn_color{
+    background-color: #009999!important;
+}
+
+.btn_color:hover{
+    background-color:#086969!important;
+}
+
 .src_btn {
     color: white;
-    background-color: #009999;
     border: none;
     width: 120px;
     height: 50px;
@@ -118,10 +129,6 @@ input::placeholder
 }
 
 /* main container */
-
-.mt_60 {
-    margin-top: 60px;
-}
 
 .text_aqua {
     color: #009999;
@@ -145,4 +152,37 @@ input::placeholder
 .text_grey_light {
     color: #CCC;
     font-size: 1rem;
+}
+
+.btn_lg {
+    border: none;
+    padding: 12px 50px 14px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+/* .btn_sm {
+    padding: 12px 25px 14px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+} */
+
+.btn_sm{
+    padding: 12px 25px 14px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    color: #999;
+    background-color: #EEEEEE;
+}
+
+.btn_sm:hover,
+.btn_sm:focus,
+.btn_sm.active{
+    background-color: #009999;
+}
+
+.row>* {
+    padding-right: 0;
 }
