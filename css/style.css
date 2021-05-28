@@ -87,12 +87,6 @@ a {
     margin-right: 30px;
 }
 
-@media (min-width: 992px) {
-    .nav-item:last-child { 
-        margin-right: 0; 
-    }
-}
-
 
 .nav-link {
     color: #666666;
@@ -125,6 +119,28 @@ a {
     border-color: #CC66CC;
 }
 
+.navbar-toggler {
+    border: none;
+}
+
+@media (max-width: 992px){
+    .navbar-collapse {
+        position: fixed;
+        top: 50px;
+        right: 0px;
+        background: white;
+        width: 150px;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .nav-item:last-child { 
+        margin-right: 0; 
+    }
+}
+
+
 /* Banner */
 
 .banner {
@@ -133,6 +149,7 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    /* background-attachment: fixed; */
 }
 
 /* Form */
