@@ -4,6 +4,10 @@
     margin-bottom: 90px;
 }
 
+.mb_50{
+    margin-bottom: 50px;
+}
+
 .mt_90{
     margin-top: 90px;
 }
@@ -28,6 +32,10 @@ a {
     text-decoration: none;
     transition: all 0.3s ease;
 }
+li {
+    list-style: none;
+}
+
 
 .text_grey{
     color: #999;
@@ -66,6 +74,7 @@ a {
 .container_small{
     max-width: 1050px;
 }
+
 
 /* Navbar */
 
@@ -132,6 +141,10 @@ a {
         width: 150px;
         padding: 15px;
     }
+
+    .contact_form{
+        max-width: 100%;
+    }
 }
 
 @media (min-width: 992px) {
@@ -149,7 +162,6 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-attachment: fixed; */
 }
 
 /* Form */
@@ -168,13 +180,12 @@ a {
 	height: auto;
     border-radius: 0;
     color: #009999;
-    border: none;
 }
 
 .form-control, 
 input:-internal-autofill-selected, 
-input::placeholder
-{
+textarea::placeholder,
+input::placeholder{
     color: #009999 !important;
 }
 
@@ -216,10 +227,6 @@ input::placeholder
     background-color: #009999;
 }
 
-/* .row>* {
-    padding-right: 0;
-} */
-
 /* Footer */
 
 footer{
@@ -243,7 +250,8 @@ footer{
     color: #999999; 
 }
 
-.footer_links li a:hover {
+.footer_links li a:hover,
+.contact_links li a:hover {
      color: #009999; 
 }
 
@@ -252,7 +260,6 @@ footer{
 }
 
 .social_links li {
-    list-style: none;
     margin-right: 15px;
 }
 
@@ -280,3 +287,42 @@ footer{
     color: #fff;
     background-color: #009999;
 }
+
+
+
+                                                    /* CONTACT PAGE */
+
+/* contatc row */
+
+
+.contact_form { 
+    max-width: 420px; 
+}
+
+.form_group { 
+    margin-bottom: 25px; 
+}
+
+select:not([multiple]) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-position: right 15px center;
+    background-repeat: no-repeat;
+    background-image: url(../img/select-arrow.png);
+    padding: 14px 20px;
+    padding-right: 20px;
+    color: #666;
+}
+
+.contact_details{
+    padding-left: 0;
+}
+
+.contact_details li{
+    margin-bottom: 20px;
+}
+
+.contact_details li a i {
+    width: 30px;
+}
+
